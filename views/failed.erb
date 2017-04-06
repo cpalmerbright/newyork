@@ -1,0 +1,22 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel = "stylesheet" type = "text/css" href = "style.css" />
+
+  <title>Too Bad! You Failed!!!</title>
+</head>
+<body>
+
+<h2>You failed!</h2>
+
+<p><%= "Too bad, you ran out of guesses." %></p>
+<p><%= "The number was " + correct_number.to_s %></p>
+
+
+<form action="/new_number" method="post">
+  <input class="button"  type="submit" value="Play Again">
+</form>
+<img src="images/robot.png">
+
+</body>
+</html>

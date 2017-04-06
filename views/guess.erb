@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Guessing Game!</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+  </head>
+  <body>
+  <h2> Can you guess the number? </h2>
+
+  <p> Enter your guess below:</p>
+  <form action='/guess' method='post'>
+    <input type="text" name="guess">
+    <input type="hidden" name="correct_number" value=":correct_guess">
+    <input class="button"  type="submit" value="See how you went!">
+  </form>
+
+  <form action="/new_number" method="post">
+    <input class="button"  type="submit" value="New Game!">
+  </form>
+  <img src="images/robot.png">
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guessing Game!</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Guessing Game!</h1>
+
+
+    <p><%= "The number " + guess + " was " + response %></p>
+    <p><%= "Number of guesses: " + guesses.to_s %></p>
+
+    <form action="/guess" method="get">
+      <input class="button"  type="submit" value="Guess Again">
+    </form>
+    <img src="images/robot.png">
+
+  </body>
+</html>

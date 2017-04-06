@@ -1,0 +1,22 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel = "stylesheet" type = "text/css" href = "style.css" />
+
+  <title>Correct Guess</title>
+</head>
+<body>
+
+  <h2>Correct Guess</h2>
+
+  <p><%= response + " The number was " + guess %></p>
+
+  <p><%= "Number of guesses: " + guesses.to_s %></p>
+
+  <form action="/new_number" method="post">
+    <input class="button" type="submit" value="Play Again">
+  </form>
+  <img src="images/robot.png">
+
+</body>
+</html>
